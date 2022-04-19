@@ -4,28 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="about.css">
+    <title>ToDo List</title>
+
 </head>
 <body>
     <header>
-        <h1 style="color: #1c98c9;">ToDo List</h1> 
-        <img src="list.jpg" alt="logo" style="width:50px;height:50px"> 
-        <p><a href="./index.html">Home</a></p>
+        <img src="list.jpg" alt="logo" > 
+        <nav class="navbar">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About us</a>
+          </nav>
+          <h2>Malak Odtalla</h2> 
 
-     
     </header>
 
     <main>
-        <p>My name is Malak.</p>
-        <p>I graduated from the Faculty of Information Technology, and currently i am taking a course in software development with Luminus college .</p>
 
-        <form >
-            <label for="name">User Name:</label><br>
-            <input type="text"  name="name" value=""><br>
-            <label for="email">Email:</label><br>
-            <input type="text"  name="email" value=""><br><br>
-            <input type="submit" value="Submit">
-          </form> 
+        <section class="info">
+           <img class="pic" src="data:image/png;base64,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" alt="logo" > 
+            <span>I graduated from the Faculty of Information Technology, 
+                and currently i am taking a course in software development with Luminus college .</span>
+        </section>
+
+        <h3>Contact me</h3> 
+
+<section class="form1">
+    <form >
+        <label for="name"> Name   :</label>
+        <input type="text"  name="name" ><br><br>
+        
+
+        <label for="email">E-mail    :</label>
+        <input type="email"  name="email" ><br><br>
+        
+        <label for="Message">Message:</label>
+        <input type="text"  name="Message" ><br><br>
+
+        <input type="submit" value="Send">
+      </form> 
+</section>
+
     </main>
     <footer>
 
