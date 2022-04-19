@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToDo List</title>
-    <style>
-        table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-th, td {
-  background-color: white;
-}
+    <link rel="stylesheet" href="index.css">
 
-    </style>
+    <title>ToDo List</title>
+   
 </head>
 <body>
     <header>
-        <h1 style="color: #1c98c9;">ToDo List</h1> 
-        <img id="image" src="list.jpg" alt="logo" style="width:50px;height:50px"> 
-        <p><a href="./about.html">About us</a></p>
+      <img id="image" src="list.jpg" alt="logo" > 
+
+        <nav class="navbar" >
+
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About us</a>
+
+        </nav>
+
+        <h1>ToDo List</h1> 
     </header>
     <main>
         <table>
@@ -30,18 +30,18 @@ th, td {
               
             </tr>
             <tr>
-              <td>Check Emails</td>
-              <td><input type="checkbox"  name="status1"><label for="status1"> Done</label> </td>
+              <td >  Check Emails <input type="checkbox" class="checkbox"  name="status1" checked >  </td>
+              <td> <span class="dot1"></span> </td>
             
             </tr>
             <tr>
-              <td>Read a book</td>
-              <td><input type="checkbox"  name="status2"><label for="status2"> Done</label></td>
+              <td >  Read a book    <input type="checkbox" class="checkbox" name="status2">     </td>
+              <td><span class="dot2"></span></td>
               
             </tr>
             <tr>
-                <td>Doing exercise </td>
-                <td><input type="checkbox"  name="status3"><label for="status3"> Done</label></td>
+              <td>  Doing exercise<input type="checkbox" class="checkbox" name="status3">   </td>
+              <td><span class="dot3"></span></td>
                 
               </tr>
           </table>
@@ -50,7 +50,8 @@ th, td {
 
 
     <footer>
-        <p> copyright 2022</p> </footer>
+        <p> copyright 2022</p> 
+      </footer>
 
 </body>
 </html>
