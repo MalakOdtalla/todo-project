@@ -1,3 +1,6 @@
+
+
+
 let username = prompt("Enter your name!");
 let gender='';
 while(gender != "male" && gender != "female"){
@@ -47,18 +50,20 @@ if ((question3 )=== ""){
 
 //____________________
 
+ 
 let arrayofAnswers=['yes','no'];
-let items='';
+
 
 function traverseArray(arr){
-
+    let items;
     for(let i=0; i< arr.length; i++){
-       items= arr[i];
+       items= console.log(arr[i]);
+       
     }
     return items;
 }
 
-console.log(traverseArray(arrayofAnswers));
+traverseArray(arrayofAnswers);
 
 
 
